@@ -63,12 +63,16 @@ function(params){
                                             Area = rep(Area_Size_Population_Raster_Cell, length(Cells_Of_Populated_Cluster))))
         
         # Remove people from identified populated cluster in order to look for other, more aggregated ones
-        Population_Raster_Vx <- velox(raster::subs(x = Population_Raster_Vx$as.RasterLayer(),
-                                                   y = as.data.frame(cbind(Population_Raster_Vx$as.RasterLayer()[Cells_Of_Populated_Cluster], replacement = rep(0,length(Cells_Of_Populated_Cluster)))),
-                                                   by = 1,
-                                                   which = 2,
-                                                   subsWithNA = FALSE)
-        )
+        # Population_Raster_Vx <- velox(raster::subs(x = Population_Raster_Vx$as.RasterLayer(),
+        #                                            y = as.data.frame(cbind(Population_Raster_Vx$as.RasterLayer()[Cells_Of_Populated_Cluster], 
+        #                                                                    replacement = rep(0,length(Cells_Of_Populated_Cluster)))),
+        #                                            by = 1,
+        #                                            which = 2,
+        #                                            subsWithNA = FALSE)
+        # )
+        Population_Raster_Vx = Population_Raster_Vx$as.RasterLayer()
+        Population_Raster_Vx[Cells_Of_Populated_Cluster] = 0
+        Population_Raster_Vx <- velox(Population_Raster_Vx)
       }
       
       # Re-aggregate by a factor 2 and compute area of cells to consider going through loop one more time
