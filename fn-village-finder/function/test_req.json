@@ -4,7 +4,7 @@
   "Maximum_Area_Size_Of_Cluster_Km2": 100,
   "User_Input_Villages_DF": [],
   "filename_raster_pop": {
-    "filename": "HTI_worldpop_2015_ppp",
+    "filename": "PHL_worldpop_2015_ppp",
     "url": "https://www.dropbox.com/s/xdphrf9z8w7v4a7/PHL_worldpop_2015_ppp.RData?dl=1"
   }
 }
