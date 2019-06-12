@@ -14,8 +14,8 @@ JSON object containing:
 ## Constraints
 
 
-
 ## Response
 GeoJSON object of points for each predicted village location
 	
-
+## Example input
+An example JSON input can be found [here](https://raw.githubusercontent.com/disarm-platform/fn-village-finder/master/fn-village-finder/function/test_req.json)
