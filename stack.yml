@@ -5,10 +5,12 @@ functions:
   fn-village-finder:
     lang: dockerfile
     handler: ./fn-village-finder
-    image: disarm/fn-village-finder:0.0.1
+    image: disarm/fn-village-finder:0.1.0
     environment:
       write_debug: true
       exec_timeout: 600
       write_timeout: 700
       read_timeout: 700
       combine_output: false
+    labels:
+      com.openfaas.scale.zero: true
