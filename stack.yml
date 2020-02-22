@@ -5,7 +5,7 @@ functions:
   fn-village-finder:
     lang: r-geospatial
     handler: ./function
-    image: disarm/fn-village-finder:0.1.0
+    image: disarm/fn-village-finder:0.2.0
     environment:
       write_debug: true
       exec_timeout: 600
