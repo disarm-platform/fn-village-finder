@@ -7,7 +7,7 @@ JSON object containing:
 - `Max_Number_Of_People_In_Cluster` {string} 
 - `Min_Number_Of_People_In_Cluster` {string} 
 - `Maximum_Area_Size_Of_Cluster_Km2` {string}
-- `filename_raster_pop` {JSON object} with 2 fields. 'filename' and 'url' relating to the population raster file.
+- `filename_raster_pop` {JSON object} with 2 fields. 'filename' and 'url' relating to the population raster RData file. Raster file should be a RData file of a velox object.
 
 
 ## Constraints
