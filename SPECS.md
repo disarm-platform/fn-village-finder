@@ -1,4 +1,5 @@
 # fn-village-finder
+Generate clusters (centroids) of populated places from gridded population dataset.
 
 ## Parameters
 
