@@ -11,7 +11,7 @@ JSON object containing:
 
 
 ## Constraints
-
+* Will be slow for large raster files
 
 ## Response
 GeoJSON object of points for each predicted village location
